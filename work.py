@@ -4,9 +4,9 @@ import time
 import timeit
 import datetime
 import sys
-from playsound import playsound
-import pygame as pg 
-import subprocess
+# from playsound import playsound
+# import pygame as pg 
+# import subprocess
 
 __author__ = 'Jeff Reiher'
 
@@ -34,7 +34,8 @@ def workout():
 			# mixer.music.play()
 			# playsound("Yeah.mp3", block=False)
 			# os.popen2("cvlc Yeah.mp3 --play-and-exit")
-			subprocess.call(['xdg-open','Yeah.mp3'])
+			# subprocess.call(['xdg-open','Yeah.mp3'])
+			os.startfile("Yeah.mp3")
 			time.sleep(go)
 			i+=1
 			j+=1
@@ -48,7 +49,8 @@ def workout():
 			# mixer.music.play()
 			# playsound("Okay.mp3", block=False)
 			# os.popen2("cvlc Okay.mp3 --play-and-exit")
-			subprocess.call(['xdg-open','Okay.mp3'])
+			# subprocess.call(['xdg-open','Okay.mp3'])
+			os.startfile("Okay.mp3")
 			time.sleep(rest)
 			i+=1
 	Freq = 4000
@@ -58,7 +60,8 @@ def workout():
 	# mixer.music.play()
 	# playsound("Huh.mp3", block=False)
 	# os.popen2("cvlc Huh.mp3 --play-and-exit")
-	subprocess.call(['xdg-open','Huh.mp3'])
+	# subprocess.call(['xdg-open','Huh.mp3'])
+	os.startfile("Huh.mp3")
 	end_time = (time.time() - start_time)
 	m,s = divmod(end_time, 60)
 	h, m = divmod(m, 60)
