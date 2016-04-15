@@ -10,23 +10,30 @@ def progressrun(startInterval, stepInterval, totTime):
 			time.sleep(startInterval) 
 			i += 1
 			print i
-		startInterval -= stepInterval
-		print startInterval
+		if startInterval == 1: 
+			startInterval = 1
+		else:
+			startInterval -= stepInterval
+		print 'new interval ' + str(startInterval)
+
+
 		j += 1
+		print 'Jloop ' + str(j)
 
 
 # this to do here
-# 1. turn totTime into minutes
+# 1. turn totTime into minutes (maybe)
 # 2. count down minutes
 # 3. different beep on a level change
-# 4. add a end beep
+# 4. add an end beep
 # 5. add a keyboardInterrupt Error try/exept block
 # 6. defence aganist interval going below a certain level
+# 7 change tot to levels
 
 
 
 
-progressrun(4, 1, 60)
+progressrun(5, 1, 10)
 
 
 
