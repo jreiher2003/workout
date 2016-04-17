@@ -12,17 +12,17 @@ from timeit import default_timer as timer
 import time
 i = 0
 while i < 10:
-	start = timer()
-	time.sleep(1)
-	sys.stdout.write("Count down: %d \r" % (i))
-	sys.stdout.flush()
-	i += 1
+    start = timer()
+    time.sleep(1)
+    sys.stdout.write("Count down: %d \r" % (i))
+    sys.stdout.flush()
+    i += 1
 
 
-	end = timer()
-	print(end - start)  
-	start += end
-	print start 
+    end = timer()
+    print(end - start)  
+    start += end
+    print start 
 
 # import time
 # import sys
@@ -35,4 +35,4 @@ while i < 10:
 # import time
 # from tqdm import tqdm
 # for i in tqdm(range(100)):
-# 	time.sleep(1)
+#   time.sleep(1)
